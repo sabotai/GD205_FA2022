@@ -6,14 +6,19 @@ public class BasicMovement : MonoBehaviour
 {
     Vector3 startPos;
     public Transform hazard;
+    public Transform theKey;
+    public Transform[] hazards;
     public AudioClip impact;
     AudioSource audioSource;
+    public bool hasKey;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position;
         audioSource = GetComponent<AudioSource>();
+        hasKey = false;
     }
 
     // Update is called once per frame
@@ -50,10 +55,20 @@ public class BasicMovement : MonoBehaviour
            print("hello world");
            transform.position += Vector3.up;
        }
-
+       if (transform.position == theKey.position){
+           theKey.gameObject.SetActive(false);
+           hasKey = true;
+       }
        if (transform.position == hazard.position){
            transform.position = startPos;
            audioSource.PlayOneShot(impact, 0.7F);
        }
+        for(int i = 0;i < hazards.Length; i++){
+                if (transform.position == hazards[i].position){
+                    transform.position = startPos;
+                    audioSource.PlayOneShot(impact, 0.7F);
+                }
+            
+        }
     }
 }
