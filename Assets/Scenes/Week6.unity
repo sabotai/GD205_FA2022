@@ -5039,7 +5039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prey: {fileID: 1334706346}
   proxDistance: 20
-  forceAmt: -10
+  forceAmt: 10
 --- !u!1 &305096952
 GameObject:
   m_ObjectHideFlags: 0
@@ -10051,7 +10051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prey: {fileID: 1334706346}
   proxDistance: 20
-  forceAmt: -10
+  forceAmt: 10
 --- !u!1 &500515656
 GameObject:
   m_ObjectHideFlags: 0
@@ -14968,7 +14968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prey: {fileID: 1334706346}
   proxDistance: 20
-  forceAmt: -10
+  forceAmt: 10
 --- !u!1 &507255625
 GameObject:
   m_ObjectHideFlags: 0
@@ -20582,7 +20582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prey: {fileID: 1334706346}
   proxDistance: 20
-  forceAmt: -10
+  forceAmt: 10
 --- !u!1 &1334706341
 GameObject:
   m_ObjectHideFlags: 0
@@ -30691,7 +30691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prey: {fileID: 1334706346}
   proxDistance: 20
-  forceAmt: -10
+  forceAmt: 10
 --- !u!1 &1800553368
 GameObject:
   m_ObjectHideFlags: 0
@@ -35608,7 +35608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prey: {fileID: 1334706346}
   proxDistance: 20
-  forceAmt: -10
+  forceAmt: 10
 --- !u!1 &1994482478
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,6 +43,8 @@ public class UFOMove : MonoBehaviour
 
     void OnCollisionEnter(Collision colReport){
         Debug.Log("YOU ARE HIT! " + colReport.gameObject.name); //same as print()
-        GetComponent<ParticleSystem>().Play();
+        //if (colReport.gameObject.tag == "enemy"){
+            GetComponent<ParticleSystem>().Play();
+        //}
     }
 }
