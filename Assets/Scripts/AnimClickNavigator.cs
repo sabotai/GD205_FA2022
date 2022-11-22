@@ -22,11 +22,8 @@ public class AnimClickNavigator : MonoBehaviour
         Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit = new RaycastHit();
 
-        if (Physics.Raycast( laser, out hit)){
-            if (Input.GetMouseButtonDown(0)){
-                agent.SetDestination(hit.point); 
-            }
-
+        if (Physics.Raycast( laser, out hit) && Input.GetMouseButtonDown(0)){
+            agent.SetDestination(hit.point); 
         }
 
         if (agent.velocity == Vector3.zero){

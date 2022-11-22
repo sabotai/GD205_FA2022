@@ -34,9 +34,12 @@ public class UIStuff : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider col){
-        coinScore++;
-        scoreText.text = "" + coinScore;
-        Destroy(col.gameObject);
+        
+        if (col.CompareTag("Collectible")){
+            coinScore++;
+            scoreText.text = "" + coinScore;
+            Destroy(col.gameObject);
+        }
     }
 
 
