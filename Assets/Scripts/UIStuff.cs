@@ -30,7 +30,7 @@ public class UIStuff : MonoBehaviour
     }
 
     public void restartGame(){
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1); //index value based on the build settings
     }
 
     void OnTriggerEnter(Collider col){

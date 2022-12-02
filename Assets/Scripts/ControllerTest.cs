@@ -18,5 +18,7 @@ public class ControllerTest : MonoBehaviour
         if (Input.GetButton("Fire2")) Debug.Log("Fire2");
         if (Input.GetButton("Fire3")) Debug.Log("Fire3");
         if (Input.GetButton("Jump")) Debug.Log("Jump");
+        if (Input.GetButton("Submit")) Debug.Log("Submit");
+        if (Input.GetButton("Cancel")) Debug.Log("Cancel");
     }
 }
